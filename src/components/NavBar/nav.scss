@@ -1,0 +1,56 @@
+.navContainer {
+  width: 100vw;
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 100;
+}
+.navContainer .imgContainer {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 50%;
+    margin-top: 15px;
+    padding-left: 15px;
+  }
+  p {
+    font-family: "Urbanist", sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 15px;
+  }
+}
+.navContainer .linksContainer {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 40px;  
+  z-index: 1000;
+}
+.linksContainer li {
+  list-style: none;
+  font-family: "Urbanist", sans-serif;
+}
+.menuFlotante {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(241, 18, 18, 0.359);
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  color: white;
+  ul{
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.App {
+  background-color: black;
+}
+
+.homeContainer {
+  width: 100vw;
+}
+.SobreMiContainer {
+  background-color: #dadada;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.proyectsContainer {
+  width: 100%;
+  font-family: "Urbanist", sans-serif;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.spacer {
+  aspect-ratio: 900/150;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.layer1 {
+  background-image: url("./assets/layer1.svg");
+}
+.layer2 {
+  background-image: url("./assets/layer2.svg");
+}
+.layer3 {
+  background-image: url("./assets/layer3.svg");
+}
+
+/* Definir estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra */
+}
+
+/* Estilo del riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: #000000; /* Color de fondo del riel */
+}
+
+/* Estilo del pulgar (la parte que puedes arrastrar) de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background-color: #e65454; /* Color del pulgar */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Cambio de estilo del pulgar cuando se pasa el mouse sobre él */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #dd4141;
+}
+
+/* Estilo de la esquina inferior derecha de la barra de desplazamiento (si es visible) */
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}

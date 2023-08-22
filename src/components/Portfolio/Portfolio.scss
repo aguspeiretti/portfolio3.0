@@ -1,0 +1,18 @@
+.leettersProyectContainer {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  .texto {
+    font-size: 25px;
+  }
+}
+.proyectitos {
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
