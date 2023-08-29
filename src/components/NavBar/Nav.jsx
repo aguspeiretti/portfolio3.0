@@ -2,7 +2,7 @@ import "../NavBar/nav.scss";
 import name from "../../assets/reactLogo.png";
 import { Spin as Hamburger } from "hamburger-react";
 import { useState } from "react";
-import cv from "../../assets/cv.pdf";
+import cv from "../../assets/agus.pdf";
 import { Link } from "react-scroll";
 
 const Nav = () => {
