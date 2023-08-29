@@ -3,7 +3,8 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Letters from "../AnimateLetters/Letters";
 import "./Home.scss";
-import fondo from "../../assets/prueba1.png";
+import h1 from "../../assets/blob.png";
+import { Element } from "react-scroll";
 
 function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -42,9 +43,8 @@ function Home() {
 
   useEffect(() => {
     setTimeout(() => {
-      setShow(!show);
-    }, 1000);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+      setShow(true);
+    }, 1700);
   }, []);
 
   useEffect(() => {
@@ -55,15 +55,16 @@ function Home() {
 
   return (
     <>
+      <Element name="top"></Element>
       <div className="homeContainerComponent">
         <div className="contenedorPrincipal">
           <div className="texto">
             <h1>
-              <span className={letterClass}>H</span>
-              <span className={`${letterClass} _12`}>o</span>
-              <span className={`${letterClass} _13`}>l</span>
-              <span className={`${letterClass} _14`}>a</span>
-              <span className={`${letterClass} _15`}>!</span>
+              <span className={`${letterClass} _smaller`}>H</span>
+              <span className={`${letterClass} _12  _smaller`}>o</span>
+              <span className={`${letterClass} _13  _smaller`}>l</span>
+              <span className={`${letterClass} _14  _smaller`}>a</span>
+              <span className={`${letterClass} _15  _smaller`}>!</span>
               <br />
               <span className={`${letterClass} _15`}>S</span>
               <span className={`${letterClass} _16`}>o </span>
@@ -74,18 +75,22 @@ function Home() {
                 idx={15}
               />
               <br />
-              <Letters letterClass={letterClass} strArray={jobArray} idx={22} />
+              <Letters
+                letterClass={`${letterClass} _smaller1`}
+                strArray={jobArray}
+                idx={22}
+              />
             </h1>
             <h2>
               <span>FullStack</span> / <span>Mongo</span> / <span>Express</span>{" "}
               / <span>React</span> / <span>NodeJS</span>
             </h2>
-
-            <button>Contacta me</button>
           </div>
         </div>
-        <div className="imagenContainer">
-          <img src={fondo} alt="" />
+        <div className={`imagenContainer ${show ? "visible" : ""}`}>
+          <div className="imagen-flotante">
+            <img src={h1} alt="" />
+          </div>
         </div>
 
         <section id="section10" className="demo">

@@ -4,6 +4,7 @@ import Letters from "../AnimateLetters/Letters";
 import "./Portfolio.scss";
 
 import ProyectoCard from "../ProyectoCard/ProyectoCard";
+import { Element } from "react-scroll";
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -22,6 +23,7 @@ const Portfolio = () => {
 
   return (
     <>
+      <Element name="proyectos"></Element>
       <div className="leettersProyectContainer" data-aos="zoom-in-right">
         <div className="texto">
           <h1>

@@ -1,0 +1,25 @@
+.contenedorMancha {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+.changing-div {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, #ffa07a, #87ceeb);
+  border-radius: 50%;
+  animation: moveLava 3s infinite;
+}
+
+@keyframes moveLava {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}

@@ -15,6 +15,7 @@ const eventos = [
     descripcion:
       "Se presenta un comercio electrónico desarrollado íntegramente en React, con la implementación de Redux para la funcionalidad del carrito. Los estilos han sido elaborados utilizando CSS puro. Este sitio ofrece una experiencia completa que incluye un carrito de compras totalmente funcional, además de la capacidad de reservar clases.",
     skills: ["React", "Js", "Redux", "Css", "Html"],
+    web: "https://mdq-surf-c23be.web.app/",
   },
   {
     foto: proyecto2,
@@ -22,6 +23,7 @@ const eventos = [
     descripcion:
       "Una plataforma que permite la reserva de clases a través de correo electrónico, complementada con una presencia web que brinda información relevante.",
     skills: ["React", "Js", "Css", "Html"],
+    web: "https://forest-gym.web.app/",
   },
   {
     foto: proyecto3,
@@ -29,6 +31,7 @@ const eventos = [
     descripcion:
       "La web en cuestión se destaca por ser una fuente de información y referencia de productos en formato de muestra. Brindando una perspectiva ilustrativa , esta página ofrece una presentación selecta y esclarecedora de diversos productos.",
     skills: ["Js", "Css", "Html"],
+    web: "https://aguspeiretti.github.io/ruca-textil/",
   },
   {
     foto: proyecto5,
@@ -36,6 +39,7 @@ const eventos = [
     descripcion:
       "Esta plataforma en línea sirve como un escaparate de productos representativos, facilitando a los clientes interesados establecer contacto a través de WhatsApp para obtener más detalles y gestionar sus consultas de manera personalizada.",
     skills: ["Js", "Css", "Html"],
+    web: "https://aguspeiretti.github.io/tiendaVintashh/",
   },
   {
     foto: proyecto6,
@@ -50,6 +54,7 @@ const eventos = [
     descripcion:
       "Pequeño juego de trivia, para practicar las bases fundamentales de javascript, dando la posibilidad de elegir tanto categorias como el tiempo a jugar , se agrego un inicio de secion con Auth0 para una experiencia personalizada",
     skills: ["React", "Js", "Css", "Html"],
+    web: "https://entriviados-g.web.app/",
   },
   {
     foto: proyecto8,
@@ -64,6 +69,7 @@ const eventos = [
     descripcion:
       "Un mini proyecto personal . Una sencilla web que busca fomentar el desarrollo del habla en niños mediante la asociación entre imágenes y sonidos. Una experiencia interactiva diseñada para inspirar y estimular el aprendizaje temprano.",
     skills: ["React", "Js", "Css", "Html"],
+    web: "https://pitupedia-6c1ab.web.app/",
   },
   {
     foto: proyecto11,
@@ -71,6 +77,7 @@ const eventos = [
     descripcion:
       "proyecto optimizado para visualización en dispositivos móviles .La página presenta una pantalla de registro o inicio de sesión, que activa la función de favoritos. La 'Home' muestra un carrusel de imágenes y ofrece acceso a las categorías principales. Un menú de navegación inferior facilita la exploración de secciones como Restaurantes, Bares, Cafés, organizados por zonas y categorías. Cada sección incluye tarjetas descriptivas y enlaces a detalles ampliados.",
     skills: ["React", "Sass", "Firebase", "EmailJs , Router-Dom"],
+    web: "https://donde-comemo.vercel.app/",
   },
 ];
 
@@ -98,7 +105,9 @@ const ProyectoCard = () => {
                 ))}
               </div>
               <div className="botonProyecto">
-                <button>ver proyecto &gt;</button>
+                <a href={evento.web} target="_blank" rel="noopener noreferrer">
+                  <button>ver proyecto</button>
+                </a>
               </div>
             </div>
           </div>

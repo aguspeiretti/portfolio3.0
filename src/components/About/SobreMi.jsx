@@ -16,6 +16,7 @@ import SkillIcon12 from "../../assets/firebase.png";
 import SkillIcon13 from "../../assets/redux.png";
 import SkillIcon14 from "../../assets/docker.png";
 import SkillIcon15 from "../../assets/bs3.png";
+import { Element } from "react-scroll";
 
 const SobreMi = () => {
   const skillIcons = [
@@ -44,6 +45,7 @@ const SobreMi = () => {
 
   return (
     <>
+      <Element name="info"></Element>
       <div
         className="sobreMiContainer"
         data-aos="fade-right"
@@ -79,22 +81,21 @@ const SobreMi = () => {
                 Hola, soy Agus, desarrollador Fullstack especializado en el
                 stack MERN. Mi pasión por la programación comenzó en febrero de
                 2021 y desde entonces he estado inmerso en un emocionante viaje
-                de aprendizaje y crecimiento constante. Mi formación en
-                Coderhouse me brindó una base sólida en desarrollo Fullstack,
-                con un enfoque en las tecnologías
+                de aprendizaje . Mi formación en Coderhouse me brindó una base
+                sólida en desarrollo Fullstack, con un enfoque en las
+                tecnologías
                 <span className="colored"> MongoDB</span>,{" "}
                 <span className="colored">Express</span>,{" "}
                 <span className="colored">React</span> y
-                <span className="colored"> NodeJs</span>. Esta combinación me
-                permite crear aplicaciones completas y dinámicas desde cero,
-                abarcando tanto el lado del servidor como la experiencia del
-                usuario. Creo en la importancia de adaptarse a un entorno
+                <span className="colored"> NodeJs</span>.Me encanta crear
+                aplicaciones completas y dinámicas desde cero, abarcando tanto
+                el lado del servidor como la experiencia del usuario. Me parece
+                que una parte importante es saber adaptarse a un entorno
                 tecnológico en constante evolución. Por eso, me mantengo
-                actualizado con las últimas tendencias y herramientas para
-                tratar de ofrecer soluciones eficientes.Veo cada proyecto como
-                una oportunidad para demostrar mi creatividad . Mi objetivo esta
-                enfocado en trata de comprender las necesidades del usuario y
-                transformarlas en soluciones funcionales y atractivas. Puedes
+                actualizado y en constante estudio. Veo cada proyecto como una
+                oportunidad para demostrar mi creatividad y uno de mis objetivos
+                esta enfocado en trata de comprender las necesidades del usuario
+                y transformarlas en soluciones funcionales y atractivas. Puedes
                 ver algunos de mis proyectos mas abajo.
               </p>
             </div>

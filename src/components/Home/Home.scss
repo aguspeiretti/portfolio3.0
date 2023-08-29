@@ -1,13 +1,14 @@
-.homeContainerComponent{
+.homeContainerComponent {
   width: 100vw;
   height: 100vh;
   display: flex;
-
+  background-color: #070707;
+  justify-content: center;
+  align-items: center;
 }
 .contenedorPrincipal {
-  background-color: #000000;
   height: 100%;
-  width: 50%;
+  width: 100%;
   min-height: 566px;
   position: relative;
   transform-style: preserve-3d;
@@ -16,27 +17,39 @@
   font-family: "Urbanist", sans-serif;
   overflow: hidden;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+  z-index: 20;
   margin-right: 60px;
+
   .texto {
     h1 {
       color: #ccd6f6;
-      font-size: 3.5vw;
+      font-size: 7vw;
       margin: 0;
+      text-align: center;
       font-weight: 600;
       letter-spacing: 3.6px;
       animation: fadeIn 1s 1.7s backwards;
       // text-shadow: 1px 1px 7px rgb(0, 0, 0), 0 0 7em rgb(255, 255, 255),
       //   0 0 0.9em rgb(255, 255, 255);
+      ._smaller {
+        font-size: 5vw;
+      }
+      ._smaller1 {
+        font-size: 5vw;
+        margin-top: 10px;
+      }
     }
     h2 {
       color: #ffffff;
-      margin-top: 30px;
+      margin-top: 50px;
       font-weight: 400;
       font-family: sans-serif;
       letter-spacing: 3px;
       animation: fadeIn 1s 1.8s backwards;
+      text-align: center;
+      text-shadow: 3px 2px 8px rgba(0, 0, 0, 0.86);
       span {
         font-size: 0.9vw;
         display: inline-block;
@@ -71,24 +84,54 @@
 }
 
 .imagenContainer {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
+  position: absolute;
+  z-index: 1;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  opacity: 0; // Comienza con la imagen invisible
+  transform: translateY(
+    20px
+  ); // Mueve la imagen hacia abajo (igual que la animación de float)
+  transition: opacity 1s, transform 1s; // Agrega transiciones para suavizar la aparición
+
+  &.visible {
+    opacity: 1; // Muestra la imagen cuando la clase .visible se agrega
+    transform: translateY(0); // Levanta la imagen a su posición original
+  }
+}
+.imagen-flotante {
+  width: auto; /* Ajusta el tamaño según tus necesidades */
+  height: 65%;
+  position: relative;
+  margin: 50px auto; /* Ajusta el margen según tus necesidades */
+  animation: float 3s infinite ease-in-out;
+  overflow: hidden;
+
   img {
-    margin-left: 40px;
-    height: 90%;
-    opacity: 0;
-    animation: backInRight 1s 1.2s;
-    animation-fill-mode: forwards;
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Ajusta la distancia de flotación */
   }
 }
 #section10 {
   a {
     span {
       position: absolute;
-      bottom: 50px;
+      bottom: 30px;
       left: 50%;
       width: 30px;
       height: 50px;
