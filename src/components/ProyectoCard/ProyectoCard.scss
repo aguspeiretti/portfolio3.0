@@ -27,7 +27,9 @@
   left: calc(50% - 1px);
   z-index: 1;
 }
-
+.containerMobile {
+  display: none;
+}
 .evento {
   display: flex;
   justify-content: space-between;
@@ -140,4 +142,68 @@
   border-right: 20px solid #fff;
   right: initial;
   left: -50px;
+}
+
+@media (max-width: 760px) {
+  .container {
+    display: none;
+  }
+  .containerMobile {
+    display: block;
+  }
+  .proyectosMobile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    img {
+      width: 80%;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    p {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .skills {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 20px;
+        font-size: 15px;
+        margin-left: 10px;
+        background-color: rgb(238, 85, 85);
+        border-radius: 40px;
+        margin-top: 20px;
+        overflow: hidden;
+      }
+    }
+    .botonProyecto {
+      button {
+        font-family: "Urbanist", sans-serif;
+        background-color: transparent;
+        color: whitesmoke;
+        border: none;
+        cursor: pointer;
+        font-size: 15px;
+
+        &:hover {
+          color: rgb(238, 85, 85);
+        }
+      }
+    }
+  }
 }

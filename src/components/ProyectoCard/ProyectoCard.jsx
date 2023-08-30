@@ -113,6 +113,25 @@ const ProyectoCard = () => {
           </div>
         ))}
       </div>
+      <div className="containerMobile">
+        {eventos.map((evento, index) => (
+          <div className="proyectosMobile" key={index}>
+            <img src={evento.foto} alt="" />
+            <h2>{evento.titulo}</h2>
+            <p>{evento.descripcion}</p>
+            <div className="skills">
+              {evento.skills.map((skill, skillIndex) => (
+                <span key={skillIndex}>{skill}</span>
+              ))}
+            </div>
+            <div className="botonProyecto">
+              <a href={evento.web} target="_blank" rel="noopener noreferrer">
+                <button>ver proyecto</button>
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

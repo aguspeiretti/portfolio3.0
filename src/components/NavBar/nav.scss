@@ -101,3 +101,13 @@
     }
   }
 }
+@media (max-width: 765px) {
+  .menuFlotante {
+    ul {
+      align-items: center;
+      a {
+        margin: 0;
+      }
+    }
+  }
+}
