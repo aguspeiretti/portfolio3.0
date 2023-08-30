@@ -210,17 +210,25 @@
       text-align: center;
       h1 {
         color: #ccd6f6;
-        font-size: 33px;
+        font-size: 8vw;
         margin: 0;
         font-weight: 600;
         letter-spacing: 3.6px;
         animation: fadeIn 1s 1.7s backwards;
         // text-shadow: 1px 1px 7px rgb(0, 0, 0), 0 0 7em rgb(255, 255, 255),
         //   0 0 0.9em rgb(255, 255, 255);
+        ._smaller {
+          font-size: 8vw;
+        }
+        ._smaller1 {
+          font-size: 8vw;
+          margin-top: 10px;
+        }
       }
+
       h2 {
         span {
-          font-size: 15px;
+          font-size: 4.5svw;
         }
       }
     }
