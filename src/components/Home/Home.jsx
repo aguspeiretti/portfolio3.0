@@ -5,6 +5,7 @@ import Letters from "../AnimateLetters/Letters";
 import "./Home.scss";
 import h1 from "../../assets/blob.png";
 import { Element } from "react-scroll";
+import Contador from "../Contador/Contador";
 
 function Home() {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -92,6 +93,8 @@ function Home() {
             <img src={h1} alt="" />
           </div>
         </div>
+
+        <Contador />
 
         <section id="section10" className="demo">
           <a href="#thanks">

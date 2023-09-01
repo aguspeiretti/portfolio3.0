@@ -4,6 +4,7 @@ import "./App.scss";
 import Portfolio from "./components/Portfolio/Portfolio";
 import SobreMi from "./components/About/SobreMi";
 import Contacto from "./components/Contacto/Contacto";
+import Contador from "./components/Contador/Contador";
 
 function App() {
   return (
