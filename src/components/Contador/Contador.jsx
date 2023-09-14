@@ -10,7 +10,7 @@ const Contador = () => {
     if (!solicitudRealizada) {
       // Realiza una solicitud GET al servidor Express para obtener el contador de visitas y actualizarlo
       axios
-        .get("http://localhost:8080/api/contador")
+        .get("https://zenith-abyssinian-latency.glitch.me/api/contador")
         .then((response) => {
           setContador(response.data.contador);
           setSolicitudRealizada(true); // Marca la solicitud como realizada
